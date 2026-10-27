@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chipotle Menu with Prices in Python</title>
+<meta name="description" content="Python-based Chipotle menu app that displays all menu items with their prices in a clean, organized format. Beginner-friendly and easy to extend.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --text: #1f2328;
+    --heading: #111111;
+    --link: #0b5fff;
+    --border: #e3e6ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a;
+      --text: #d9dde1;
+      --heading: #ffffff;
+      --link: #6ea8ff;
+      --border: #2b3036;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.75;
+    font-size: 18px;
+  }
+  article {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+    color: var(--heading);
+    margin-bottom: 0.6em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--border);
+  }
+  h2 {
+    font-size: 1.45rem;
+    color: var(--heading);
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+  }
+  p { margin: 0 0 1.1em; }
+  a { color: var(--link); }
+</style>
+</head>
+<body>
+<article>
+
+<h1>Chipotle Menu with Prices in Python</h1>
+
+<p>Looking for a simple Python project that feels like real software? This <a href="https://github.com/yourusername/chipotle-menu">Chipotle menu with prices</a> app is a Python-based program that displays all menu items with their prices in a clean, organized format. Users can browse the menu, select their favorite items, choose quantities and get an automatic total bill. It is beginner-friendly, well structured and easy to extend with new items. Contributions and feedback are welcome, and it is perfect for learners.</p>
+
+<h2>Why Build a Menu App?</h2>
+<p>Most beginner exercises are dull. Printing numbers or reversing a string teaches syntax, but it rarely feels useful. A menu app is different because it mirrors something you have seen in real life. You pick food, choose a quantity and pay a bill. Turning that process into code shows you how programs solve everyday problems, and that makes learning stick.</p>
+
+<h2>How the Menu Is Stored</h2>
+<p>The menu is stored in a Python dictionary. Each item name is a key and its price is the value. Burritos, bowls, tacos, chips and drinks can all live in one simple structure. If a price changes or a new dish is added, you only edit one line. Keep prices as numbers, not strings, so you can multiply them by quantities without errors. Note that the prices in the project are examples, since real Chipotle prices vary by location.</p>
+
+<h2>Displaying Items Clearly</h2>
+<p>A good menu is easy to read. The app loops through the dictionary and prints each item with a number and a price formatted to two decimal places. Numbers make selection faster, because a customer can type “2” instead of a full item name. With f-strings, you can align the columns so the menu looks tidy in the console. Small details like this make a basic project feel polished.</p>
+
+<h2>Choosing Items and Quantities</h2>
+<p>After the menu appears, the program asks the user to select an item and enter a quantity. A while loop keeps the order going until the user types “done.” Each selection is saved in a cart, which is just another dictionary. Input validation is important here. If someone types letters instead of a number, the program should show a friendly message instead of crashing. Try and except blocks handle this neatly and teach you a valuable lesson about error handling.</p>
+
+<h2>Calculating the Total Bill</h2>
+<p>When the order is complete, the app multiplies each price by its quantity and adds everything together. You can then apply sales tax and print a receipt that lists every item, quantity, line total and the final amount due. Keeping the tax rate in a single variable at the top of the file makes it easy to change later. Splitting the code into small functions such as show_menu, take_order and print_receipt keeps the project organized and easier to test.</p>
+
+<h2>Easy to Extend</h2>
+<p>The best feature of this project is how simple it is to grow. You can add combo meals, discount codes, a tip option or a loyalty points system. You can save orders to a CSV file to keep a sales record. If you want something more visual, you can build a window with Tkinter or turn the app into a small website with Flask. Every upgrade introduces a new concept without making the base project harder to understand.</p>
+
+<h2>Contribute and Learn</h2>
+<p>This project is open to everyone. If you find a bug, have an idea for a new feature or want to improve the code, you are welcome to contribute. Fork the repository, make your changes and send a pull request. Feedback from other learners helps the project improve, and contributing is great practice for working with GitHub.</p>
+
+<h2>Conclusion</h2>
+<p>A Chipotle menu app is a small project with big learning value. It strengthens your understanding of dictionaries, loops, functions and input handling while giving you something practical to show in your portfolio. Start with the simple version, test it, break it, fix it and then add features one at a time.</p>
+
+</article>
+</body>
+</html>
